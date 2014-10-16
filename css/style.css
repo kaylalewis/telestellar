@@ -1,0 +1,71 @@
+body {
+	font-family: 'Quattrocento Sans', sans-serif;
+	background-color:#000033;
+	color:#FFFFF5;
+
+}
+
+p {
+margin-top: 20px;
+
+}
+
+.titles {
+
+	font-size: 1.2em;
+}
+
+#navigation {
+
+position:fixed;
+height:90px;
+text-align: center;
+width:100%;
+left:0px;
+background-color: #000033;
+padding-bottom: 25px;
+
+
+}
+
+#navigation a {
+color:#FFFFF0;
+font-size:16px;
+padding-left:15px;
+padding-right:15px;
+text-decoration: none;
+font-weight: normal;
+
+
+}
+
+#navigation a:hover {
+
+color:gray;
+
+}
+
+header {
+font-family: 'Quattrocento Sans', sans-serif;
+top:0;
+text-align: center;
+color:#FFFFF0;
+font-size: 65px;
+position: fixed;
+background-color: #000033;
+width: 100%;
+left:0px;
+padding-bottom: 0px;
+padding-top: 20px;
+font-weight: normal;
+
+}
+
+footer {
+color:#FFFFF0;
+background-color: #000033;
+width: 100%;
+left:0px;
+}
+
+

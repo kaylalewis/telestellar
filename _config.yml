@@ -1,0 +1,13 @@
+auto: true
+destination: telestellar.com
+markdown: kramdown
+highlighter: true
+
+paginate: 8
+
+permalink: /:categories/:title
+
+--- # Categories
+- art
+- transelemental
+- cv
