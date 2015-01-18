@@ -2,73 +2,50 @@
 layout: default
 ---
 
-
-
-
-<div class="grid-full float-center">
-<div id="navigation">
-<a data-scroll data-options='{ "easing": "easeInOutQuad" }' href="#how"><img src="img/star.png">how it works</a>
-<a data-scroll data-options='{ "easing": "easeInOutQuad" }' href="#find"><img src="img/arrow.png">find your star</a>
-<a data-scroll data-options='{ "easing": "easeInOutQuad" }' href="#give"><img src="img/present.png"> give a gift</a>
-<!--<a data-scroll data-options='{ "easing": "easeInOutQuad" }' href="#contact">Contact</a> -->
-
-</div>
-</div>
-</header>
+<div class="about">
+<h2> About </h2>
 <div class="grid-three-fourths float-center">
-	<br><br><br><br><br><br><br><br><br><br>
-<!-- <p class="titles">Welcome to Telestellar. We're so glad you're here! Share the preciousness of rare elements extracted from stars with the ones you love. </p><br><br> -->
-<div class="titles">
-<p id="how">How it works</p>
+	Telestellar is an ongoing investigation into our relationship and dialogue around outer space.<!-- <br><input type="button" onclick="this.style.visibility='hidden'; return toggleMe('para1');"  value="more" class="menuButton"><br><div id="para1" style="display:none"> --> The ownership, utility, and perception of outer space is rapidly changing with the privatization of space travel. Telestellar speculates what these changes will look like and how we will engage with them.
+	<br>
 </div>
-	<p>
-			Telestellar has developed cutting edge technology in order to harvest rare materials from any known star in the Milky Way Galaxy. Each expedition happens upon your order–i.e. we don’t pre-collect materials. This way, the gift you seek for your loved one is unique to your vision. The voyage matters just as much as the product: it represents your dedication and can be carefully tracked and used as part of the gift itself.
-		</p>
-			<p>
-			<br><br><br><br><br><br>
-		</p>
-<div class="titles">
-<p id="find">Find your star</p>
 </div>
-	<p>
-			The known universe is your oyster! Choose stars based off of their history, stage, composition, or appearance. Personal consultations with Telestellar staff are highly recommended to match prospective investors up with their ideal stars. Learn more about our specialized tools for star harvesting below.
-		</p>
-		<p id="1@#%^-bottom"><a data-scroll data-options='{ "easing": "easeOutCubic" }' href="#top">top</a></p>
-			<p>
-			<br><br><br><br><br><br>
-		</p>
-		<div class="titles">
-<p id="give">Give a gift</p>
-</div>
-	<p>
-			Extraction of precious materials from the stars comes in a variety of forms nearly as extensive as the stars in the universe. Consultants seek your interests based off of your designated star and aid in choosing a custom star composition to bring home to your loved one. Materials can be sculpted, illuminated, suspended, or just about anything else given our advanced technology. Check out a list of potential ideas and our testimonials from customers below.
-		</p>
-<p id="1@#%^-bottom"><a data-scroll data-options='{ "easing": "easeOutCubic" }' href="#top">top</a></p>
-		<p>
-			<br><br><br><br><br><br>
-		</p>
+
+<h2 class="projects"> Projects </h2>
+<ul>
+<li>
+<a href="outerspacetreaty.html" class="wrapper"><span class="text">The Outer Space Treaty</span><img src="img/OST.jpg" class="fix"></a></li> <li>
+<a href="outerspacetreaty.html" class="wrapper"><span class="text">Stage One</span><img src="img/OST.jpg" class="fix"></a></li>
+<li>
+<a href="{% post_url 2015-01-19-probituaries %}" class="wrapper"><span class="text">Probituaries</span><img src="img/OST.jpg" class="fix"></a>
+</li>
+<li>
+<a href="{% post_url 2015-01-18-artinspace %}" class="wrapper"><span class="text">Art in Space</span><img src="img/OST.jpg" class="fix"></a>
+</li>
+<li>
+<a href="{% post_url 2015-01-20-stellarGauges %}" class="wrapper"><span class="text">Domestic Stellar Gauges</span><img src="img/OST.jpg" class="fix"></a>
+</li>
+<li>
+2015 Star Catalogue
+</li>
+<li>
+Cosmic Signs
+</li>
 
 
-<!--<p id="contact"><a data-scroll href="#1@#%^-bottom">Contact</a></p>
 
-	<p>
-			Star mining is the future of energy and element acquisition. Until now, ownership of a star entailed naming it and observing it from a strictly Earth viewpoint. Star mining allows star owners to go beyond seeing the star as a twinkling spectacle and use it as property for financial gain.
-		</p>
-		<p>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		</p>-->
 
-</div>
-	
-	<script src='js/smooth/bind-polyfill.js'></script>
-	<script src='js/smooth/smooth-scroll.js'></script>
-	<script>
-		smoothScroll.init({
-			speed: 1000,
-			easing: 'easeInOutCubic',
-			offset: 300,
-			updateURL: true,
-			callbackBefore: function ( toggle, anchor ) {},
-			callbackAfter: function ( toggle, anchor ) {}
-		});
-	</script>
+<script type="text/javascript">
+function toggleMe(a){
+var e=document.getElementById(a);
+if(!e)return true;
+if(e.style.display=="none"){
+e.style.display="block"
+}
+else{
+e.style.display="none"
+}
+return true;
+}
+</script>
+
+
