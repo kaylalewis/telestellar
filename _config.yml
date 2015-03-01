@@ -1,7 +1,7 @@
 auto: true
 destination: telestellar.com
 markdown: kramdown
-highlighter: true
+highlighter: pygments
 
 paginate: 8
 
