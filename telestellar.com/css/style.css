@@ -8,6 +8,7 @@ body{
 	font-weight: 300;
 	/*background-color: #252525;*/
 	background-color: #0e0e0e;
+	color: #f8f8f8;
 
 
 }
@@ -18,8 +19,9 @@ body{
     background-image: url("/../img/highres.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: 100%;
 		width: 100%;
-		height: 800px;
+		height: 1000px;
 		margin: 0%;
 		opacity: .9;
 		z-index: 1;
@@ -27,50 +29,63 @@ body{
   }
 
 
-	.containerMain {
-			float: none;
-	     width: 100%;
+	.mainContainer {
+		float: none;
+	     width: 99%;
 	     margin-left: auto;
 	     margin-right: auto;
 	}
 
-img {
+img.post {
 
+	padding-bottom:20px;
+}
 
-	width: 300px;
-	height: 300px;
+img.main {
+
+width:300px;
+height:300px;
+
 
 
 }
 
 .written {
-	width:300px;
-	height:300px;
-	display: inline-block;
-	background-color: #0e0e0e;
-	vertical-align: top;
-
-
+width:300px;
+height:300px;
+display: inline-block;
+vertical-align: top;
+background-color:#0e0e0e;
+padding-top:140px;
+text-align: center;
 	}
 
+.written:hover {
 
-a.main {
+	background-color: #f8f8f8;
+	opacity:.5;
+}
 
-	text-decoration: none;
+a {
+
+text-decoration: none;
 	color: #f8f8f8;
-	text-align: center;
-	font-size: 1.7em;
+	font-size: 1.5em;
 	font-weight: 300;
-	padding-top: 130px;
-
 
 
 }
 
-a.main:hover {
-	background-color:#f8f8f8;
+.main:hover{
+
+	background-color: #f8f8f8;
+	opacity:.5;
+}
+
+a:hover {
+
 	color: #0e0e0e;
-	opacity: .5;
+
 }
 
 .stories {
@@ -80,20 +95,61 @@ a.main:hover {
 	font-size: 1.5em;
 	color: #0e0e0e;
 	background-color: #f8f8f8;
+	text-indent: 50px;
 
 }
 .stories::first-letter {
-font-size: 200%;
 
+	font-size: 200%;
+
+}
+
+.storiesTranscript {
+	padding:5%;
+	margin-left:0%;
+	margin-right:0%;
+	font-size: 1.5em;
+	color: #0e0e0e;
+	background-color: #f8f8f8;
+
+}
+
+.posts {
+	display: block;
+	padding-top:400px;
+	margin: 0 auto;
+	font-size: 1.4em;
+	color: #f8f8f8;
+	width: 50%;
+	text-align:center;
+
+}
+
+.telespread {
+
+	width: 100%;
+}
+
+.postswhite {
+
+	padding-top:10%;
+	padding-bottom: 400px;
+	padding-left:100px;
+	padding-right:100px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 1.4em;
+	background-color: #f8f8f8;
+	width: 100%;
+	color: #0e0e0e;
+	text-align:center;
 }
 
 li {
 
 	list-style-type: none;
 }
- p{
-text-indent: 50px;
-}
+
 /*footer {
 
 width: 100%;

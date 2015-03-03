@@ -3,11 +3,6 @@ destination: telestellar.com
 markdown: kramdown
 highlighter: pygments
 
-paginate: 8
+paginate: 10
 
 permalink: /:categories/:title
-
---- # Categories
-- art
-- transelemental
-- cv

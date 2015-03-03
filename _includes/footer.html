@@ -1,6 +1,33 @@
 
 <!-- Scripts -->
     <!-- Hosted jquery library -->
+
+    <!-- {% for post in paginator.posts %}
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    	{% endfor %}
+
+    	<script>
+    	function leftArrowPressed() {
+    		window.location.href = '{{ paginator.previous_page_path }}'
+    	}
+
+    	function rightArrowPressed() {
+    		window.location.href = '{{ paginator.next_page_path }}';
+    	}
+
+    	document.onkeydown = function(evt) {
+    			evt = evt || window.event;
+    			switch (evt.keyCode) {
+    					case 37:
+    							leftArrowPressed();
+    							break;
+    					case 39:
+    							rightArrowPressed();
+    							break;
+    			}
+    	};
+
+    	</script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Bootstrap core js library -->
     <script src="js/bootstrap.min.js"></script>
