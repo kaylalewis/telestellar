@@ -18,23 +18,17 @@ body{
 		background-color: #000;
     background-image: url("/../img/highres.jpg");
 		background-repeat: no-repeat;
-		background-position: center;
+		/*background-position: center;*/
 		background-size: 100%;
 		width: 100%;
-		height: 1000px;
-		margin: 0%;
+		height: 2000px;
+		/*margin: 0 auto;*/
 		opacity: .9;
 		z-index: 1;
-		position: absolute;
+		/*position: absolute;*/
+		/*vertical-align:middle;*/
   }
 
-
-	.mainContainer {
-		float: none;
-	     width: 99%;
-	     margin-left: auto;
-	     margin-right: auto;
-	}
 
 img.post {
 
@@ -47,7 +41,6 @@ width:300px;
 height:300px;
 
 
-
 }
 
 .written {
@@ -55,21 +48,22 @@ width:300px;
 height:300px;
 display: inline-block;
 vertical-align: top;
-background-color:#0e0e0e;
+background-color:#989898;
 padding-top:140px;
 text-align: center;
+
+
 	}
 
 .written:hover {
 
-	background-color: #f8f8f8;
-	opacity:.5;
+	background-color: #0e0e0e;
 }
 
 a {
 
 text-decoration: none;
-	color: #f8f8f8;
+	color: #0e0e0e;
 	font-size: 1.5em;
 	font-weight: 300;
 
@@ -78,20 +72,18 @@ text-decoration: none;
 
 .main:hover{
 
-	background-color: #f8f8f8;
-	opacity:.5;
+	background-color: #0e0e0e;
+
 }
 
 a:hover {
 
-	color: #0e0e0e;
+	color: #989898;
 
 }
 
 .stories {
 	padding:5%;
-	margin-left:0%;
-	margin-right:0%;
 	font-size: 1.5em;
 	color: #0e0e0e;
 	background-color: #f8f8f8;
@@ -106,8 +98,6 @@ a:hover {
 
 .storiesTranscript {
 	padding:5%;
-	margin-left:0%;
-	margin-right:0%;
 	font-size: 1.5em;
 	color: #0e0e0e;
 	background-color: #f8f8f8;
@@ -117,10 +107,8 @@ a:hover {
 .posts {
 	display: block;
 	padding-top:400px;
-	margin: 0 auto;
 	font-size: 1.4em;
 	color: #f8f8f8;
-	width: 50%;
 	text-align:center;
 
 }
@@ -132,14 +120,10 @@ a:hover {
 
 .postswhite {
 
-	padding-top:10%;
-	padding-bottom: 400px;
-	padding-left:100px;
-	padding-right:100px;
-	margin-left:auto;
-	margin-right:auto;
+	padding: 10%;
+	padding-bottom:100%;
 	font-size: 1.4em;
-	background-color: #f8f8f8;
+	background: #f8f8f8;
 	width: 100%;
 	color: #0e0e0e;
 	text-align:center;
