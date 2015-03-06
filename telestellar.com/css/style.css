@@ -141,10 +141,13 @@ margin-bottom: 0%;
 
 	.main, .written {
 
-
 		width:100%;
 	}
 
+	.main {
+
+		height:100%;
+	}
 
 
 }
