@@ -1,0 +1,27 @@
+{% include header.html %}
+
+{{ content }}
+
+<script>
+function leftArrowPressed() {
+  window.location.href = '{{ page.previous.url }}'
+}
+
+function rightArrowPressed() {
+  window.location.href = '{{ page.next.url }}';
+}
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    switch (evt.keyCode) {
+        case 37:
+            leftArrowPressed();
+            break;
+        case 39:
+            rightArrowPressed();
+            break;
+    }
+};
+</script>
+
+{% include footer.html %}

@@ -62,9 +62,32 @@
 </audio>
 <p>Merta vocal synchronization with Kepler 7671081</p>
 
+
 </div>
 </div>
 
+
+<script>
+function leftArrowPressed() {
+  window.location.href = '/leni'
+}
+
+function rightArrowPressed() {
+  window.location.href = '/telespread';
+}
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    switch (evt.keyCode) {
+        case 37:
+            leftArrowPressed();
+            break;
+        case 39:
+            rightArrowPressed();
+            break;
+    }
+};
+</script>
 
 
 <!-- Scripts -->
@@ -94,6 +117,10 @@
     	};
 
     	</script> -->
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
    <script src="/js/kraken.js"></script>
 
@@ -106,10 +133,9 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
 
-  
+
     <script src="js/main.js"></script>
 </body>
 
 </html>
-
 

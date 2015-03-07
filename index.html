@@ -6,9 +6,12 @@ layout: default
 <div class="box">
 </div>
 
+{% for post in paginator.posts reversed %}
 
+				 <a href="{{ post.url }}"><span class="written">{{post.title}}</span><img src="{{ post.image }}"></a>
+{% endfor %}
 
-	<a href="{% post_url 2015-03-02-ameliai %}"><div class="written">Amelia Part I</div></a>
+	<!-- <a href="{% post_url 2015-03-02-ameliai %}"><div class="written">Amelia Part I</div></a>
 <a href="{% post_url 2015-03-01-telespread %}"><div class="written">Telestellar Booklet</div></a>
 <a href="#"><img src="/img/square.jpg"class="main"></a>
 <a href="{% post_url 2015-03-01-mertaaudio %}"><div class="written">Merta and 7671081</div></a>
@@ -23,37 +26,16 @@ layout: default
 		<a href="#"><img src="/img/square.jpg" class="main"></a>
 <a href="{% post_url 2015-03-01-leni %}"><div class="written">Len Part I</div></a>
 		<a href="#"><img src="/img/square.jpg"class="main"></a>
-		<a href="{% post_url 2015-03-02-duggertytranscript %}"><div class="written">Duggerty Trial 13/50</div></a>
+		<a href="{% post_url 2015-03-02-duggertytranscript %}"><div class="written">Duggerty Trial 13/50</div></a> -->
 </div>
 </div>
 
 
 <!-- {% for post in paginator.posts %}
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-	{% endfor %}
+	{% endfor %} -->
 
-	<script>
-	function leftArrowPressed() {
-		window.location.href = '{{ paginator.previous_page_path }}'
-	}
 
-	function rightArrowPressed() {
-		window.location.href = '{{ paginator.next_page_path }}';
-	}
-
-	document.onkeydown = function(evt) {
-			evt = evt || window.event;
-			switch (evt.keyCode) {
-					case 37:
-							leftArrowPressed();
-							break;
-					case 39:
-							rightArrowPressed();
-							break;
-			}
-	};
-
-	</script> -->
 
 <script>
 window.onload = function(){
