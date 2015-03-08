@@ -7,8 +7,11 @@ layout: default
 </div>
 
 {% for post in paginator.posts reversed %}
-
-				 <a href="{{ post.url }}"><span class="written">{{post.title}}</span><img src="{{ post.image }}"></a>
+{% if post.category == "written" %}
+				 <a href="{{ post.url }}"><span class="written">{{post.title}}</span></a>
+{% elsif post.category == "visual" %}
+				<a href="{{ post.url }}"><img src="{{ post.image }}" class="main"></a>
+{% endif %}
 {% endfor %}
 
 	<!-- <a href="{% post_url 2015-03-02-ameliai %}"><div class="written">Amelia Part I</div></a>

@@ -39,6 +39,11 @@ height:300px;
 
 }
 
+.blah {
+	background-color: white;
+	color: black;
+}
+
 .written {
 width:300px;
 height:300px;
@@ -77,7 +82,7 @@ a:hover {
 
 }
 
-.stories, .storiestranscript, .posts, .postswhite {
+.stories, .storiesTranscript, .posts, .postswhite {
 
 	font-size: 1.3em;
 
@@ -104,9 +109,10 @@ a:hover {
 }
 
 .posts {
-	padding-top:400px;
+
 	color: #f8f8f8;
 	text-align:center;
+margin-top: 25%;
 
 }
 
@@ -151,7 +157,7 @@ margin-bottom: 0%;
 		height:100%;
 	}
 
-	.stories, .storiestranscript, .posts, .postswhite {
+	.stories, .storiesTranscript, .posts, .postswhite {
 
 		font-size: 1em;
 

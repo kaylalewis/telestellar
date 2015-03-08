@@ -1,5 +1,7 @@
 ---
 layout: post
+image: /img/square.jpg
+category: visual
 ---
 
 <audio controls>

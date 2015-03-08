@@ -1,6 +1,7 @@
 ---
 layout: transcripts
 title: Duggerty Trial 13/50
+category: written
 ---
 
 NEW YORK CITY, NEW YORK; THURSDAY, MAY 18, 2032 7:00 A.M.

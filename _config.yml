@@ -5,4 +5,8 @@ highlighter: pygments
 
 paginate: 10
 
-permalink: /:categories/:title
+permalink: /:title
+
+--- # Categories
+- visual
+- written

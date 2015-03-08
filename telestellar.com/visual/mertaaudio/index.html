@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title> {% if page.title %} {{ page.title }} | {% endif %} Telestellar </title>
+    <title>  Mertaaudio |  Telestellar </title>
 <html lang="en">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -64,3 +64,47 @@
 
 </head>
 <body>
+
+
+<div class="grid-three-fourths float-center">
+<div class="posts">
+
+<audio controls="">
+<source src="/../media/7671081.mp3" type="audio/mpeg" />
+</audio>
+<p>Merta vocal synchronization with Kepler 7671081</p>
+
+
+</div>
+</div>
+
+
+<script>
+function leftArrowPressed() {
+  window.location.href = '/written/leni'
+}
+
+function rightArrowPressed() {
+  window.location.href = '/visual/telespread';
+}
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    switch (evt.keyCode) {
+        case 37:
+            leftArrowPressed();
+            break;
+        case 39:
+            rightArrowPressed();
+            break;
+    }
+};
+</script>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+<script src="/js/kraken.js"></script>
+</body>
+
+</html>
+
