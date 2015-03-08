@@ -3,7 +3,7 @@ destination: telestellar.com
 markdown: kramdown
 highlighter: pygments
 
-paginate: 10
+paginate: 100
 
 permalink: /:title
 
