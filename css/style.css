@@ -39,10 +39,6 @@ height:300px;
 
 }
 
-.blah {
-	background-color: white;
-	color: black;
-}
 
 .written {
 width:300px;
@@ -110,10 +106,15 @@ a:hover {
 
 .posts {
 
-	color: #f8f8f8;
-	text-align:center;
+color: #f8f8f8;
+text-align:center;
 margin-top: 25%;
 
+}
+
+.imagePage {
+
+	margin: 2% 20%;
 }
 
 .telespread {
@@ -135,6 +136,55 @@ li {
 
 	list-style-type: none;
 }
+
+.stellamental  {
+
+	background: #fff;
+	font-family: "Tahoma", sans-serif;
+	padding: 2%;
+	color: #000;
+
+}
+
+.stellamental ul {
+
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+		font-size: .7em;
+}
+
+.stellamental a {
+    float: left;
+		text-decoration: none;
+    color: white;
+    background-color: teal;
+    padding: 0.2em 0.6em;
+
+}
+
+.stellamental a:hover {
+    background-color: fuchsia;
+}
+
+.stellamental li {
+    display: inline;
+}
+
+
+    #owl-demo .owl-item div{
+      padding:5px;
+    }
+    #owl-demo .owl-item img{
+      display: block;
+      width: 100%;
+      height: auto;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
 
 /*footer {
 

@@ -1,26 +1,14 @@
 ---
-layout: post
+layout: stellamental
 image: /img/square.jpg
 category: visual
 ---
 
-<div id="owl-example" class="owl-carousel">
-  <div><img src="/img/square.jpg" class="main"></div>
-  <div><img src="/img/square.jpg" class="main"></div>
-  <div><img src="/img/square.jpg" class="main"></div>
-  <div><img src="/img/square.jpg" class="main"></div>
-  <div><img src="/img/square.jpg" class="main"></div>
-  <div><img src="/img/square.jpg" class="main"></div>
-  <div><img src="/img/square.jpg" class="main"></div>
-  <div><img src="/img/square.jpg" class="main"></div>
-  <div><img src="/img/square.jpg" class="main"></div>
-  <div><img src="/img/square.jpg" class="main"></div>
-</div>
-
-<script>
-$(document).ready(function() {
-
-  $("#owl-example").owlCarousel();
-
-});
-</script>
+<h1>
+Stellamental
+</h1>
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Buy</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
