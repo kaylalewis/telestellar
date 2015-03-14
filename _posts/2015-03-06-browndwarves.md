@@ -3,9 +3,10 @@ layout: images
 image: /img/bda/bdaCover.jpg
 category: visual
 ---
+<div class="animated fadeOut">Anonymous meeting of brown dwarves in radius 522A</div>
 
 <div id="owl-demo" class="owl-carousel">
-  <div><img src="/img/bda/bda1.jpg"></div>
+  <div><img src="/img/bda/bda1.jpg">These are words</div>
   <div><img src="/img/bda/bda2.jpg"></div>
   <div><img src="/img/bda/bda3.jpg"></div>
   <div><img src="/img/bda/bda4.jpg"></div>

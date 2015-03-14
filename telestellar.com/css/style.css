@@ -78,7 +78,7 @@ a:hover {
 
 }
 
-.stories, .storiesTranscript, .posts, .postswhite {
+.stories, .storiesTranscript, .posts, .postswhite, .imagePage {
 
 	font-size: 1.3em;
 
@@ -114,7 +114,9 @@ margin-top: 25%;
 
 .imagePage {
 
-	margin: 2% 15%;
+	margin: 5%;
+	color: #f8f8f8;
+
 }
 
 .telespread {
@@ -185,6 +187,8 @@ li {
       -moz-border-radius: 3px;
       border-radius: 3px;
     }
+
+
 
 /*footer {
 
