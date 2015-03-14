@@ -114,7 +114,7 @@ margin-top: 25%;
 
 .imagePage {
 
-	margin: 2% 20%;
+	margin: 2% 15%;
 }
 
 .telespread {
@@ -207,10 +207,15 @@ margin-bottom: 0%;
 		height:100%;
 	}
 
-	.stories, .storiesTranscript, .posts, .postswhite {
+	.stories, .storiesTranscript, .posts, .postswhite, .imagePage  {
 
 		font-size: 1em;
 
+	}
+
+	.imagePage {
+
+		margin: 2%;
 	}
 
 

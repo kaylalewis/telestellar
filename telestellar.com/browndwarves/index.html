@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>  Stellamental |  Telestellar </title>
+    <title>  Browndwarves |  Telestellar </title>
 <html lang="en">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -72,17 +72,35 @@
 <body>
 
 
-<div class="grid-full float-center">
-<div class="stellamental">
+<div class="grid-full">
+<div class = "posts imagePage">
+<div id="owl-demo" class="owl-carousel">
+  <div><img src="/img/bda/bda1.jpg" /></div>
+  <div><img src="/img/bda/bda2.jpg" /></div>
+  <div><img src="/img/bda/bda3.jpg" /></div>
+  <div><img src="/img/bda/bda4.jpg" /></div>
+  <div><img src="/img/bda/bda5.jpg" /></div>
+  <div><img src="/img/bda/bda6.jpg" /></div>
+  <div><img src="/img/bda/bda7.jpg" /></div>
+</div>
 
-<h1>
-Stellamental
-</h1>
-<ul>
-<li><a href="#">About</a></li>
-<li><a href="#">Buy</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
+<script>
+$(document).ready(function() {
+$("#owl-demo").owlCarousel({
+
+  autoPlay: 3000,
+  stopOnHover: true,
+  navigation: true,
+  paginationSpeed: 1000,
+  goToFirstSpeed: 2000,
+  singleItem: true,
+  autoHeight: true,
+  transitionStyle: "fade"
+  });
+
+});
+
+</script>
 
 
 </div>
@@ -91,11 +109,11 @@ Stellamental
 
 <script>
 function leftArrowPressed() {
-  window.location.href = '/marki'
+  window.location.href = '/stellamental'
 }
 
 function rightArrowPressed() {
-  window.location.href = '/browndwarves';
+  window.location.href = '/markii';
 }
 
 document.onkeydown = function(evt) {
