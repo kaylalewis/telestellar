@@ -148,18 +148,18 @@ document.onkeydown = function(evt) {
     }
 };
 
-$("#leftArrow, #rightArrow").hide().fadeIn(1000);
+$("#leftArrow, #rightArrow").fadeOut(1000);
 var i = null;
 $("body").mousemove(function() {
 
   clearTimeout(i);
-  $("#leftArrow, #rightArrow").show();
-  i = setTimeout('$("#leftArrow, #rightArrow").hide();' , 2000);
+  $("#leftArrow, #rightArrow").fadeIn(1000);
+  i = setTimeout('$("#leftArrow, #rightArrow").fadeOut(1000)' , 2000);
 
 }).mouseleave(function() {
 
   clearTimeout(i);
-  $("#leftArrow, #rightArrow").hide().fadeOut(1000);
+  $("#leftArrow, #rightArrow").fadeOut(1000);
 });
 
 </script>
