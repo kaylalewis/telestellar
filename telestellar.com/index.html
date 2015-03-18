@@ -75,36 +75,8 @@
 
 <div class="container">
 	<div class="grid-full float-center">
-<div class="box">
+<div id="box">
 </div>
-
-
-
-				 <a href="/leni"><span class="written">Len</span></a>
-
-
-
-				<a href="/mertaaudio"><img src="/img/square.jpg" class="main"></a>
-
-
-
-				<a href="/telespread"><img src="/img/square.jpg" class="main"></a>
-
-
-
-				 <a href="/ameliai"><span class="written">Amelia Part I</span></a>
-
-
-
-				 <a href="/duggertytranscript"><span class="written">Duggerty Trial 13/50</span></a>
-
-
-
-				 <a href="/johni"><span class="written">John Part I</span></a>
-
-
-
-				 <a href="/karlini"><span class="written">Karlin Part I</span></a>
 
 
 
@@ -112,15 +84,43 @@
 
 
 
+				<a href="/telespread"><img src="/img/square.jpg" class="main"></a>
+
+
+
 				 <a href="/marki"><span class="written">Mark Part I</span></a>
 
 
 
-				<a href="/stellamental"><img src="/img/square.jpg" class="main"></a>
+				 <a href="/karlini"><span class="written">Karlin Part I</span></a>
+
+
+
+				<a href="/mertaaudio"><img src="/img/square.jpg" class="main"></a>
+
+
+
+				 <a href="/johni"><span class="written">John Part I</span></a>
 
 
 
 				<a href="/browndwarves"><img src="/img/bda/bdaCover.jpg" class="main"></a>
+
+
+
+				 <a href="/leni"><span class="written">Len</span></a>
+
+
+
+				 <a href="/duggertytranscript"><span class="written">Duggerty Trial 13/50</span></a>
+
+
+
+				<a href="/em"><img src="/img/gauge/titleEm.jpg" class="main"></a>
+
+
+
+				 <a href="/ameliai"><span class="written">Amelia Part I</span></a>
 
 
 
@@ -132,59 +132,27 @@
 
 
 
-				<a href="/em"><img src="/img/gauge/titleEm.jpg" class="main"></a>
+				 <a href="/lenII"><span class="written">Len II</span></a>
 
 
 
-	<!-- <a href="/ameliai"><div class="written">Amelia Part I</div></a>
-<a href="/telespread"><div class="written">Telestellar Booklet</div></a>
-<a href="#"><img src="/img/square.jpg"class="main"></a>
-<a href="/mertaaudio"><div class="written">Merta and 7671081</div></a>
-		<a href="#"><img src="/img/square.jpg" class="main"></a>
-<a href="/johni"><div class="written">John</div></a>
-		<a href="#"><img src="/img/square.jpg"class="main"></a>
-		<a href="/karlini"><div class="written">Karlin Part I</div></a>
-	<a href="/marki"><div class="written">Mark Part I</div></a>
-		<a href="#"><img src="/img/square.jpg" class="main"></a>
-		<a href="/lizai"><div class="written">Liza</div></a>
-		<a href="#"><img src="/img/square.jpg"class="main"></a>
-		<a href="#"><img src="/img/square.jpg" class="main"></a>
-<a href="/leni"><div class="written">Len Part I</div></a>
-		<a href="#"><img src="/img/square.jpg"class="main"></a>
-		<a href="/duggertytranscript"><div class="written">Duggerty Trial 13/50</div></a> -->
+				 <a href="/karlinII"><span class="written">Karlin II</span></a>
+
+
+
+				<a href="/stellamental"><img src="/img/square.jpg" class="main"></a>
+
+
+
+				 <a href="/johnII"><span class="written">John Part II</span></a>
+
+
+
+				<a href="/dnai"><img src="/img/square.jpg" class="main"></a>
+
+
 </div>
 </div>
-
-
-<!-- 
-  <h3><a href="/em">Em</a></h3>
-	
-  <h3><a href="/Yeldai">Yelda Part I</a></h3>
-	
-  <h3><a href="/markii">Mark Part II</a></h3>
-	
-  <h3><a href="/browndwarves">Browndwarves</a></h3>
-	
-  <h3><a href="/stellamental">Stellamental</a></h3>
-	
-  <h3><a href="/marki">Mark Part I</a></h3>
-	
-  <h3><a href="/lizai">Liza Part I</a></h3>
-	
-  <h3><a href="/karlini">Karlin Part I</a></h3>
-	
-  <h3><a href="/johni">John Part I</a></h3>
-	
-  <h3><a href="/duggertytranscript">Duggerty Trial 13/50</a></h3>
-	
-  <h3><a href="/ameliai">Amelia Part I</a></h3>
-	
-  <h3><a href="/telespread">Telespread</a></h3>
-	
-  <h3><a href="/mertaaudio">Mertaaudio</a></h3>
-	
-  <h3><a href="/leni">Len</a></h3>
-	 -->
 
 
 
@@ -192,8 +160,19 @@
 
 
 window.onload = function(){
-$("div.box").delay(1000).fadeOut(1000);
+$("div#box").delay(1000).fadeOut(1000);
 }
+
+// $(function() {
+// 	var COOKIE_NAME = 'splash-page-cookie';
+// 	$go = $.cookie(COOKIE_NAME);
+// 	if ($go == null) {
+// 		$.cookie(COOKIE_NAME, 'test', { path: '/', expires: 6 });
+// 		window.location = "/splash.php"
+// 	}
+// 	else {
+// 	}
+// });
 </script>
 
 

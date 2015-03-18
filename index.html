@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container">
 	<div class="grid-full float-center">
-<div class="box">
+<div id="box">
 </div>
 
 {% for post in paginator.posts reversed %}
@@ -17,16 +17,22 @@ layout: default
 </div>
 
 
-<!-- {% for post in paginator.posts %}
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-	{% endfor %} -->
-
-
 
 <script>
 
 
 window.onload = function(){
-$("div.box").delay(1000).fadeOut(1000);
+$("div#box").delay(1000).fadeOut(1000);
 }
+
+// $(function() {
+// 	var COOKIE_NAME = 'splash-page-cookie';
+// 	$go = $.cookie(COOKIE_NAME);
+// 	if ($go == null) {
+// 		$.cookie(COOKIE_NAME, 'test', { path: '/', expires: 6 });
+// 		window.location = "/splash.php"
+// 	}
+// 	else {
+// 	}
+// });
 </script>
