@@ -73,6 +73,10 @@
 <body>
 
 
+
+
+<a href="/ameliai"><span id="leftArrow"></span></a>
+<a href="/ameliai"><span id ="rightArrow"></span></a>
 <div class="container">
 <div class="grid-full float-center">
 <div class="postswhite">
@@ -85,7 +89,7 @@ Spread from Telestellar kit booklet</p>
 </div>
 </div>
 
-
+<a href="../index.html"><div id="home"></div></a>
 <script>
 function leftArrowPressed() {
   window.location.href = '/mertaaudio'
@@ -106,6 +110,21 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+$("#leftArrow, #rightArrow").hide().fadeIn(1000);
+var i = null;
+$("body").mousemove(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").show();
+  i = setTimeout('$("#leftArrow, #rightArrow").hide();' , 2000);
+
+}).mouseleave(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").hide().fadeOut(1000);
+});
+
 </script>
 
 

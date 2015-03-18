@@ -73,6 +73,10 @@
 <body>
 
 
+
+
+<a href="/duggertytranscript"><span id="leftArrow"></span></a>
+<a href="/duggertytranscript"><span id ="rightArrow"></span></a>
 <div class="container">
   <div class="grid-full float-center">
 <div class="stories">
@@ -112,7 +116,7 @@
 </div>
 </div>
 
-
+<a href="../index.html"><div id="home"></div></a>
 <script>
 function leftArrowPressed() {
   window.location.href = '/telespread'
@@ -133,6 +137,21 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+$("#leftArrow, #rightArrow").hide().fadeIn(1000);
+var i = null;
+$("body").mousemove(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").show();
+  i = setTimeout('$("#leftArrow, #rightArrow").hide();' , 2000);
+
+}).mouseleave(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").hide().fadeOut(1000);
+});
+
 </script>
 
 

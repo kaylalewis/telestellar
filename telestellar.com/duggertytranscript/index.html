@@ -73,6 +73,10 @@
 <body>
 
 
+
+
+<a href="/johni"><span id="leftArrow"></span></a>
+<a href="/johni"><span id ="rightArrow"></span></a>
 <div class="container">
   <div class="grid-full float-center">
 <div class="storiesTranscript">
@@ -165,11 +169,12 @@
 
 <p>THE COURT: If Mr. Duggerty’s attorney also has no questions, we will bring Telestellar’s information analysis representative, Luke Gelmans to the stand.</p>
 
+
 </div>
 </div>
 </div>
 
-
+<a href="../index.html"><div id="home"></div></a>
 <script>
 function leftArrowPressed() {
   window.location.href = '/ameliai'
@@ -190,6 +195,21 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+$("#leftArrow, #rightArrow").hide().fadeIn(1000);
+var i = null;
+$("body").mousemove(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").show();
+  i = setTimeout('$("#leftArrow, #rightArrow").hide();' , 2000);
+
+}).mouseleave(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").hide().fadeOut(1000);
+});
+
 </script>
 
 

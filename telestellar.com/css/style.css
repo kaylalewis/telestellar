@@ -89,6 +89,7 @@ a:hover {
 	color: #0e0e0e;
 	background-color: #f8f8f8;
 	text-indent: 50px;
+	z-index: -1;
 
 }
 .stories::first-letter {
@@ -109,6 +110,7 @@ a:hover {
 color: #f8f8f8;
 text-align:center;
 margin-top: 25%;
+z-index: -1;
 
 }
 
@@ -132,6 +134,7 @@ margin-top: 25%;
 	width: 100%;
 	color: #0e0e0e;
 	text-align:center;
+	z-index: -1;
 }
 
 li {
@@ -145,6 +148,7 @@ li {
 	font-family: "Tahoma", sans-serif;
 	padding: 2%;
 	color: #000;
+	z-index: -1;
 
 }
 
@@ -188,6 +192,50 @@ li {
       border-radius: 3px;
     }
 
+#leftArrow, #rightArrow, #home {
+
+	opacity: .9;
+}
+
+#leftArrow {
+	width: 0;
+	height: 0;
+	float: left;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right:20px solid gray;
+	margin-top: 40%;
+	margin-left: 2%;
+	position:absolute;
+	z-index: 15;
+
+}
+
+#rightArrow {
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid gray;
+	margin-top: 40%;
+	margin-left: 96%;
+	position:absolute ;
+	z-index: 15;
+	float: right;
+
+}
+
+#home {
+
+	background: gray;
+	width: 50px;
+	height: 50px;
+	margin-top: 50px;
+	vertical-align: bottom;
+	margin-bottom: 0%;
+	margin-left: 48%;
+	z-index: 15;
+}
 
 
 /*footer {
@@ -220,6 +268,32 @@ margin-bottom: 0%;
 	.imagePage {
 
 		margin: 2%;
+	}
+
+	#rightArrow{
+		width: 0;
+		height: 0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 10px solid gray;
+	}
+
+	#leftArrow {
+
+		width: 0;
+		height: 0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right:10px solid gray;
+
+	}
+
+	#home {
+
+		width: 25px;
+		height: 25px;
+		margin-left: 50%;
+		margin-bottom: 2%;
 	}
 
 

@@ -73,7 +73,11 @@
 <body>
 
 
-<div class="grid-full">
+
+
+<a href="/markii"><span id="leftArrow"></span></a>
+<a href="/markii"><span id ="rightArrow"></span></a>
+<div class="grid-full float-center">
 <div class = "imagePage">
 <div class="animated fadeOut">Anonymous meeting of brown dwarves in radius 522A</div>
 
@@ -109,7 +113,7 @@ $("#owl-demo").owlCarousel({
 </div>
 </div>
 
-
+<a href="../index.html"><div id="home"></div></a>
 <script>
 function leftArrowPressed() {
   window.location.href = '/stellamental'
@@ -130,6 +134,21 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+$("#leftArrow, #rightArrow").hide().fadeIn(1000);
+var i = null;
+$("body").mousemove(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").show();
+  i = setTimeout('$("#leftArrow, #rightArrow").hide();' , 2000);
+
+}).mouseleave(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").hide().fadeOut(1000);
+});
+
 </script>
 
 

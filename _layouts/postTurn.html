@@ -1,7 +1,11 @@
 {% include header.html %}
 
-{{ content }}
 
+
+<a href="{{ page.next.url }}"><span id="leftArrow"></span></a>
+<a href="{{ page.next.url }}"><span id ="rightArrow"></span></a>
+{{ content }}
+<a href="../index.html"><div id="home"></div></a>
 <script>
 function leftArrowPressed() {
   window.location.href = '{{ page.previous.url }}'
@@ -22,6 +26,21 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+$("#leftArrow, #rightArrow").hide().fadeIn(1000);
+var i = null;
+$("body").mousemove(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").show();
+  i = setTimeout('$("#leftArrow, #rightArrow").hide();' , 2000);
+
+}).mouseleave(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").hide().fadeOut(1000);
+});
+
 </script>
 
 {% include footer.html %}

@@ -73,6 +73,10 @@
 <body>
 
 
+
+
+<a href="/karlini"><span id="leftArrow"></span></a>
+<a href="/karlini"><span id ="rightArrow"></span></a>
 <div class="container">
   <div class="grid-full float-center">
 <div class="stories">
@@ -117,14 +121,12 @@
 
 <p>It’s always been said that parents want what’s best for their children. But when a child’s DNA proves valuable while one parent’s is essentially worthless, the pain over the blatant lack of contribution to the child’s success is impossible to hide.</p>
 
-<hr />
-
 <p> </p>
 
 </div>
 </div>
 
-
+<a href="../index.html"><div id="home"></div></a>
 <script>
 function leftArrowPressed() {
   window.location.href = '/duggertytranscript'
@@ -145,6 +147,21 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+$("#leftArrow, #rightArrow").hide().fadeIn(1000);
+var i = null;
+$("body").mousemove(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").show();
+  i = setTimeout('$("#leftArrow, #rightArrow").hide();' , 2000);
+
+}).mouseleave(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").hide().fadeOut(1000);
+});
+
 </script>
 
 

@@ -73,6 +73,10 @@
 <body>
 
 
+
+
+<a href="/telespread"><span id="leftArrow"></span></a>
+<a href="/telespread"><span id ="rightArrow"></span></a>
 <div class="grid-three-fourths float-center">
 <div class="posts">
 
@@ -85,7 +89,7 @@
 </div>
 </div>
 
-
+<a href="../index.html"><div id="home"></div></a>
 <script>
 function leftArrowPressed() {
   window.location.href = '/leni'
@@ -106,6 +110,21 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+$("#leftArrow, #rightArrow").hide().fadeIn(1000);
+var i = null;
+$("body").mousemove(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").show();
+  i = setTimeout('$("#leftArrow, #rightArrow").hide();' , 2000);
+
+}).mouseleave(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").hide().fadeOut(1000);
+});
+
 </script>
 
 
