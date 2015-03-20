@@ -3,7 +3,7 @@ layout: images
 image: /img/bda/bdaCover.jpg
 category: visual
 ---
-<div class="animated fadeOut">Anonymous meeting of brown dwarves in radius 522A</div>
+<div class="animated fadeOut">Anonymous meeting of dying stars in radius 522A</div>
 
 <div id="owl-demo" class="owl-carousel">
   <div><img src="/img/bda/bda1.jpg"></div>

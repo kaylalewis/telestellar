@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>  Karlin II |  Telestellar </title>
+    <title>  Superbluegiants |  Telestellar </title>
 <html lang="en">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -75,13 +75,40 @@
 
 
 
-<a href="/stellamental"><span id="leftArrow"></span></a>
-<a href="/stellamental"><span id ="rightArrow"></span></a>
-<div class="container">
-  <div class="grid-full float-center">
-<div class="stories">
+<a href="/karlinII"><span id="leftArrow"></span></a>
+<a href="/karlinII"><span id ="rightArrow"></span></a>
+<div class="grid-three-fourths float-center">
+<div class = "imagePage">
+<div class="animated fadeOut">Annual reunion of the Andromeda galaxy's super blue giants</div>
 
-<p>hey</p>
+<div id="owl-demo" class="owl-carousel">
+  <div><img src="/img/sbg/1.jpg" /></div>
+  <div><img src="/img/sbg/2.jpg" /></div>
+  <div><img src="/img/sbg/3.jpg" /></div>
+  <div><img src="/img/sbg/4.jpg" /></div>
+  <div><img src="/img/sbg/5.jpg" /></div>
+  <div><img src="/img/sbg/6.jpg" /></div>
+  <div><img src="/img/sbg/8.jpg" /></div>
+</div>
+
+<script>
+$(document).ready(function() {
+$("#owl-demo").owlCarousel({
+
+  autoPlay: 3000,
+  stopOnHover: true,
+  navigation: true,
+  paginationSpeed: 1000,
+  goToFirstSpeed: 2000,
+  singleItem: true,
+  autoHeight: true,
+  transitionStyle: "fade"
+  });
+
+});
+
+</script>
+
 
 </div>
 </div>
@@ -89,11 +116,11 @@
 <a href="../index.html"><div id="home"></div></a>
 <script>
 function leftArrowPressed() {
-  window.location.href = '/superbluegiants'
+  window.location.href = '/lenII'
 }
 
 function rightArrowPressed() {
-  window.location.href = '/stellamental';
+  window.location.href = '/karlinII';
 }
 
 document.onkeydown = function(evt) {
