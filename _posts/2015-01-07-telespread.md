@@ -1,6 +1,6 @@
 ---
 layout: postswhite
-image: /img/square.jpg
+image: /img/telebook.png
 category: visual
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-image: /img/square.jpg
+image: /img/soni.jpg
 category: visual
 ---
 
