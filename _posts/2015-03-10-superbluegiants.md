@@ -10,7 +10,6 @@ category: visual
   <div><img src="/img/sbg/2.jpg"></div>
   <div><img src="/img/sbg/3.jpg"></div>
   <div><img src="/img/sbg/4.jpg"></div>
-  <div><img src="/img/sbg/5.jpg"></div>
   <div><img src="/img/sbg/6.jpg"></div>
   <div><img src="/img/sbg/8.jpg"></div>
 </div>
