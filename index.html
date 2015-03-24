@@ -22,7 +22,16 @@ layout: default
 
 
 window.onload = function(){
-$("div#box").delay(1000).fadeOut(1000);
+	// if cookie.get is not expired then immediately hide this thing
+	// $("div#box").hide();
+	// else
+	if ( Cookies.get('key') != null) {
+		$("div#box").delay(1000).fadeOut(1000, function() {
+			Cookies.set('key', 'value', { expires: 60 }); // Expires in 1 minutes
+		});
+	} else {
+		$("div#box").hide();
+	}
 }
 
 // $(function() {

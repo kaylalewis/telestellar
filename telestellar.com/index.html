@@ -59,6 +59,7 @@
 
     <!-- Include js plugin -->
     <script src="/js/owl.carousel.js"></script>
+    <script src="/js/cookies.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -164,7 +165,16 @@
 
 
 window.onload = function(){
-$("div#box").delay(1000).fadeOut(1000);
+	// if cookie.get is not expired then immediately hide this thing
+	// $("div#box").hide();
+	// else
+	if ( Cookies.get('key') != null) {
+		$("div#box").delay(1000).fadeOut(1000, function() {
+			Cookies.set('key', 'value', { expires: 60 }); // Expires in 1 minutes
+		});
+	} else {
+		$("div#box").hide();
+	}
 }
 
 // $(function() {
