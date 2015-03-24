@@ -169,7 +169,7 @@ window.onload = function(){
 	// $("div#box").hide();
 	// else
 	if ( Cookies.get('key') != null) {
-		$("div#box").delay(1000).fadeOut(1000, function() {
+		$("div#box").delay(2000).fadeOut(1000, function() {
 			Cookies.set('key', 'value', { expires: 60 }); // Expires in 1 minutes
 		});
 	} else {
