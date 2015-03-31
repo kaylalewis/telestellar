@@ -1,13 +1,23 @@
 ---
-layout: post
-image: /img/square.jpg
-category: visual
+layout: dna
 ---
+<script src="/js/jcanvas.min.js"></script>
 
-Mitochondrial DNA and Absorption Spectrum
 
-TTCT TTCA TGGG GAAG CAGA TTTG GGTA CCAC CCAA GTAT TGAC TCAC 
-CCAT CAAC AACC GCTA TGTA TTTC GTAC ATTA CTGC CAGC CACC TTCT TTCA TGGG GAAG CAGA TTTG GGTA CCAC CCAA GTAT TGAC TCAC 
+<canvas id="plant"height ="400" width="400"></canvas>
+
+<form>
+<input type="button" onClick="initialize()" value = "begin" id = "buttonFlash">
+</form>
+
+
+<span class="titles">Mitochondrial DNA Subject #39875-245-87</span>
+
+<div id = "sequence"><span id="firstStrand">TTCT</span> <span id = "otherStrands">TTCA TGGG GAAG CAGA TTTG GGTA CCAC CCAA GTAT TGAC TCAC CCAT CAAC AACC GCTA TGTA TTTC GTAC ATTA CTGC CAGC CACC TTCT TTCA TGGG GAAG CAGA TTTG GGTA CCAC CCAA GTAT TGAC TCAC</span></div>
+
+
+<div id = "numbers">
+<span class="titles">Star Name Absorption Spectrum</span>
 
 
 0.000000, 2360.000000, 403.052612
@@ -33,5 +43,10 @@ CCAT CAAC AACC GCTA TGTA TTTC GTAC ATTA CTGC CAGC CACC TTCT TTCA TGGG GAAG CAGA 
 20.000000, 2360.000000, 386.260468
 21.000000, 2360.000000, 400.970398
 22.000000, 2360.000000, 426.764069
+</div>
+
+
+
+
 
 <script src="/../js/dna.js"></script>

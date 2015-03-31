@@ -76,17 +76,24 @@
 
 
 
-<a href=""><span id="leftArrow"></span></a>
-<a href=""><span id ="rightArrow"></span></a>
+<a href="/dna"><span id="leftArrow"></span></a>
+<a href="/dna"><span id ="rightArrow"></span></a>
 <div class="grid-three-fourths float-center">
-<div class="posts">
+<div class="dnaPost">
 
-<p>Mitochondrial DNA and Absorption Spectrum</p>
+<form>
+<input type="button" onclick="initialize()" value="begin" id="buttonFlash" />
+</form>
 
-<p>TTCT TTCA TGGG GAAG CAGA TTTG GGTA CCAC CCAA GTAT TGAC TCAC 
-CCAT CAAC AACC GCTA TGTA TTTC GTAC ATTA CTGC CAGC CACC TTCT TTCA TGGG GAAG CAGA TTTG GGTA CCAC CCAA GTAT TGAC TCAC </p>
+<p><span class="titles">Mitochondrial DNA Subject #39875-245-87</span></p>
 
-<p>0.000000, 2360.000000, 403.052612
+<div id="sequence"><span id="firstStrand">TTCT</span> <span id="otherStrands">TTCA TGGG GAAG CAGA TTTG GGTA CCAC CCAA GTAT TGAC TCAC CCAT CAAC AACC GCTA TGTA TTTC GTAC ATTA CTGC CAGC CACC TTCT TTCA TGGG GAAG CAGA TTTG GGTA CCAC CCAA GTAT TGAC TCAC</span></div>
+
+<div id="numbers">
+<span class="titles">Star Name Absorption Spectrum</span>
+
+
+0.000000, 2360.000000, 403.052612
 1.000000, 2360.000000, 393.782715
 2.000000, 2360.000000, 412.359467
 3.000000, 2360.000000, 377.500793
@@ -108,7 +115,8 @@ CCAT CAAC AACC GCTA TGTA TTTC GTAC ATTA CTGC CAGC CACC TTCT TTCA TGGG GAAG CAGA 
 19.000000, 2360.000000, 422.276764
 20.000000, 2360.000000, 386.260468
 21.000000, 2360.000000, 400.970398
-22.000000, 2360.000000, 426.764069</p>
+22.000000, 2360.000000, 426.764069
+</div>
 
 <script src="/../js/dna.js"></script>
 
@@ -116,7 +124,6 @@ CCAT CAAC AACC GCTA TGTA TTTC GTAC ATTA CTGC CAGC CACC TTCT TTCA TGGG GAAG CAGA 
 
 </div>
 </div>
-
 <a href="../index.html"><img id="home" src="/../img/home.png"></a>
 <script>
 function leftArrowPressed() {
@@ -124,7 +131,7 @@ function leftArrowPressed() {
 }
 
 function rightArrowPressed() {
-  window.location.href = '';
+  window.location.href = '/dna';
 }
 
 document.onkeydown = function(evt) {
@@ -161,6 +168,7 @@ $("body").mousemove(function() {
 <script src="/js/bootstrap-collapse.js"></script>
    <script src="/js/bootstrap-transition.js"></script>
    <script src="/js/bootstrap-tab.js"></script>
+
 </body>
 
 </html>

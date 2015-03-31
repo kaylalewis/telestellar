@@ -78,7 +78,7 @@ a:hover {
 
 }
 
-.stories, .storiesTranscript, .posts, .postswhite, .imagePage {
+.stories, .storiesTranscript, .posts, .postswhite, .imagePage, .dnaPost {
 
 	font-size: 1.3em;
 
@@ -112,6 +112,12 @@ text-align:center;
 margin-top: 25%;
 z-index: -1;
 
+}
+
+.dnaPost {
+
+	margin-top: 25%;
+	color: #f8f8f8;
 }
 
 .imagePage {
@@ -247,6 +253,124 @@ margin-bottom: 0%;
 
 }*/
 
+
+/*--------------DNA-----------------*/ 
+
+#buttonFlash {
+
+border: none;
+padding: 10px;
+color: white;
+
+animation-name: buttonFlash;
+animation-duration:1s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+
+
+-webkit-animation-name: buttonFlash;
+-webkit-animation-duration:1s;
+-webkit-animation-iteration-count: infinite;
+-wekbit-animation-timing-function: ease;
+
+
+}
+
+@keyframes buttonFlash {
+
+	from {background-color: red;}
+
+
+	to {background-color: blue;}
+}
+
+@-webkit-keyframes buttonFlash {
+
+	from {background-color: red;}
+
+	to {background-color: blue;}
+}
+
+.titles {
+
+
+}
+
+#sequence {
+
+
+}
+
+#firstStrandAnimate {
+
+animation-name: strandAlone;
+animation-duration: 4s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+animation-timing-function: ease;
+
+-webkit-animation-name: strandAlone;
+-webkit-animation-duration: 4s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-fill-mode: forwards;
+-wekbit-animation-timing-function: ease;
+
+/*shorthand: animation: FlipNotesLogoSlideIn 5s ease 0 normal;
+The animation CSS property is a shorthand property for animation-name, 
+animation-duration, animation-timing-function, animation-delay, 
+animation-iteration-count, animation-direction, 
+animation-fill-mode and animation-play-state.*/
+
+}
+
+@keyframes strandAlone {
+ 	from {font-size:1.3em;}
+    to {font-size:2em;}
+}
+
+@-webkit-keyframes strandAlone {
+		from {font-size:1.3em;}
+    to {font-size:2em;}
+}
+
+#numbers {
+
+display: none;
+
+
+}
+
+#secondStrandFade {
+
+animation-name: strandFade;
+animation-duration: 4s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+/*transition-timing-function: ease-out;*/
+
+-webkit-animation-name: strandFade;
+-webkit-animation-duration: 4s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-fill-mode: forwards;
+/*-webkit-transition-timing-function: ease-out;*/
+
+}
+
+@keyframes strandFade {
+ 	from {opacity:1;}
+    to {opacity:0;}
+}
+
+@-webkit-keyframes strandFade {
+	from {opacity:1;}
+    to {opacity:0;}
+}
+
+
+
+
+
+/*-----------------------------------*/
 @media only screen and (max-width : 640px) {
 
 	.main, .written {

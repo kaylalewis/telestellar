@@ -156,6 +156,10 @@
 				<a href="/dnai"><img src="/img/square.jpg" class="main"></a>
 
 
+
+				<a href="/dna"><img src="/img/square.jpg" class="main"></a>
+
+
 </div>
 </div>
 
@@ -163,30 +167,16 @@
 
 <script>
 
-
 window.onload = function(){
-	// if cookie.get is not expired then immediately hide this thing
-	// $("div#box").hide();
-	// else
+
 	if ( Cookies.get('key') != null) {
-		$("div#box").delay(2000).fadeOut(1000, function() {
+		$("div#box").delay(1000).fadeOut(1000, function() {
 			Cookies.set('key', 'value', { expires: 60 }); // Expires in 1 minutes
 		});
 	} else {
 		$("div#box").hide();
 	}
 }
-
-// $(function() {
-// 	var COOKIE_NAME = 'splash-page-cookie';
-// 	$go = $.cookie(COOKIE_NAME);
-// 	if ($go == null) {
-// 		$.cookie(COOKIE_NAME, 'test', { path: '/', expires: 6 });
-// 		window.location = "/splash.php"
-// 	}
-// 	else {
-// 	}
-// });
 </script>
 
 
@@ -196,6 +186,7 @@ window.onload = function(){
 <script src="/js/bootstrap-collapse.js"></script>
    <script src="/js/bootstrap-transition.js"></script>
    <script src="/js/bootstrap-tab.js"></script>
+
 </body>
 
 </html>
