@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
-<div class="container">
+
 	<div class="grid-full float-center">
 <div id="box">
 </div>
+<div class="container">
 
 {% for post in paginator.posts reversed %}
 {% if post.category == "written" %}
@@ -20,14 +21,23 @@ layout: default
 
 <script>
 
+// window.onload = function(){
+
+// 	if ( Cookies.get('key') != null) {
+// 		$("#box").delay(2000).fadeOut(2000, function() {
+// 			Cookies.set('key', 'value', { expires: 60 }); // Expires in 1 minutes
+// 		});
+// 	} else {
+// 		$("#box").hide();
+// 	}
+// }
+
 window.onload = function(){
 
-	if ( Cookies.get('key') != null) {
-		$("div#box").delay(1000).fadeOut(1000, function() {
-			Cookies.set('key', 'value', { expires: 60 }); // Expires in 1 minutes
-		});
-	} else {
-		$("div#box").hide();
+
+
+		$("#box").delay(1000).fadeOut(1000);
 	}
-}
+	
+
 </script>

@@ -76,21 +76,92 @@
 
 
 
-<a href="/johni"><span id="leftArrow"></span></a>
-<a href="/johni"><span id ="rightArrow"></span></a>
-<div class="grid-three-fourths float-center">
+<a href="/Marki"><span id="leftArrow"></span></a>
+<a href="/Marki"><span id ="rightArrow"></span></a>
+
+
+
+<div class="grid-half float-center">
 <div class="posts">
 
-<audio controls="">
-<source src="/../media/7671081.mp3" type="audio/mpeg" />
-</audio>
+<!-- <script type="text/javascript" src="/../js/js.js"></script>
+<script type="text/javascript" src="/../js/html5slider.js"></script> -->
+<!-- <audio controls>
+<source src="/../media/7671081.mp3" type="audio/mpeg">
+</audio> -->
 
 <p>Merta vocal synchronization with Kepler 7671081</p>
 
+<div id="player">
+
+<div id="time"></div>
+<br />
+
+<div id="play">
+</div>
+<!-- <div id = "pause">
+</div> -->
+
+</div>
+
+<script>
+document.ready = function() {
+
+var song = new Audio("/../media/7671081.mp3");
+
+var time = song.currentTime;
+
+
+
+
+
+
+
+$("#play").click(function() {
+
+song.play();
+
+
+
+$("#time").animate({
+
+	marginLeft: "250px"
+
+}, 25330);
+
+console.log(song.duration);
+
+
+
+});
+
+
+
+
+// $("#pause").click(function() {
+	
+// 	song.pause();
+
+// });
+
+
+
+
+
+
+
+
+}
+
+
+</script>
+
 
 
 </div>
 </div>
+
+
 
 <a href="../index.html"><img id="home" src="/../img/home.png"></a>
 <script>
@@ -99,7 +170,7 @@ function leftArrowPressed() {
 }
 
 function rightArrowPressed() {
-  window.location.href = '/johni';
+  window.location.href = '/Marki';
 }
 
 document.onkeydown = function(evt) {

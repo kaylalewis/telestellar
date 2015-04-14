@@ -5,7 +5,7 @@ category: visual
 ---
 
 <h1>
-Stellamental
+Lumo
 </h1>
 <ul>
 <li><a href="#">About</a></li>

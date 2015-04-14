@@ -74,14 +74,14 @@
 <body>
 
 
-<div class="container">
 	<div class="grid-full float-center">
 <div id="box">
 </div>
+<div class="container">
 
 
 
-				 <a href="/lizai"><span class="written">Liza Part I</span></a>
+				 <a href="/lizai"><span class="written">Liza I</span></a>
 
 
 
@@ -89,11 +89,7 @@
 
 
 
-				 <a href="/marki"><span class="written">Mark Part I</span></a>
-
-
-
-				 <a href="/karlini"><span class="written">Karlin Part I</span></a>
+				 <a href="/karlini"><span class="written">Karlin I</span></a>
 
 
 
@@ -101,7 +97,7 @@
 
 
 
-				 <a href="/johni"><span class="written">John Part I</span></a>
+				 <a href="/Marki"><span class="written">Mark I</span></a>
 
 
 
@@ -109,7 +105,7 @@
 
 
 
-				 <a href="/leni"><span class="written">Len</span></a>
+				 <a href="/leni"><span class="written">Len I</span></a>
 
 
 
@@ -121,15 +117,15 @@
 
 
 
-				 <a href="/ameliai"><span class="written">Amelia Part I</span></a>
+				 <a href="/ameliai"><span class="written">Amelia I</span></a>
 
 
 
-				 <a href="/markii"><span class="written">Mark Part II</span></a>
+				<a href="/ost"><img src="/img/ostCover.jpg" class="main"></a>
 
 
 
-				 <a href="/Yeldai"><span class="written">Yelda Part I</span></a>
+				 <a href="/Yeldai"><span class="written">Yelda I</span></a>
 
 
 
@@ -149,11 +145,7 @@
 
 
 
-				 <a href="/johnII"><span class="written">John Part II</span></a>
-
-
-
-				<a href="/dnai"><img src="/img/square.jpg" class="main"></a>
+				 <a href="/markii"><span class="written">Mark II</span></a>
 
 
 
@@ -167,16 +159,25 @@
 
 <script>
 
+// window.onload = function(){
+
+// 	if ( Cookies.get('key') != null) {
+// 		$("#box").delay(2000).fadeOut(2000, function() {
+// 			Cookies.set('key', 'value', { expires: 60 }); // Expires in 1 minutes
+// 		});
+// 	} else {
+// 		$("#box").hide();
+// 	}
+// }
+
 window.onload = function(){
 
-	if ( Cookies.get('key') != null) {
-		$("div#box").delay(1000).fadeOut(1000, function() {
-			Cookies.set('key', 'value', { expires: 60 }); // Expires in 1 minutes
-		});
-	} else {
-		$("div#box").hide();
+
+
+		$("#box").delay(1000).fadeOut(1000);
 	}
-}
+	
+
 </script>
 
 

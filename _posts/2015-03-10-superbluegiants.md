@@ -3,7 +3,7 @@ layout: images
 image: /img/sbg/titlesbg.jpg
 category: visual
 ---
-<div class="animated fadeOut">Annual reunion of the Andromeda galaxy's super blue giants</div>
+<div class="animated fadeOut">Annual festival of Radius 3B's super blue giants</div>
 
 <div id="owl-demo" class="owl-carousel">
   <div><img src="/img/sbg/1.jpg"></div>
