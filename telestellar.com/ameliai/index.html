@@ -60,6 +60,7 @@
     <!-- Include js plugin -->
     <script src="/js/owl.carousel.js"></script>
     <script src="/js/cookies.js"></script>
+    <script src = "/js/dragend.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -76,10 +77,13 @@
 
 
 
-<a href="/ost"><span id="leftArrow"></span></a>
+<a href="/em"><span id="leftArrow"></span></a>
 <a href="/ost"><span id ="rightArrow"></span></a>
 
+<!-- <span id = "leftArrow"></span>
+  <span id = "rightArrow"></span> -->
 
+<div class="wholePage">
 
 <div class = "container">
   <div class="grid-full float-center">
@@ -121,11 +125,13 @@ Amelia remembered begging her mother not to go through with it. “Mom, you’re
 
 
 
+</div>
+
 
 <a href="../index.html"><img id="home" src="/../img/home.png"></a>
 <script>
 function leftArrowPressed() {
-  window.location.href = '/em'
+  window.location.href = '/em';
 }
 
 function rightArrowPressed() {
@@ -143,6 +149,19 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+//mobile swipe
+
+jQuery('body').on('swiperight', '.wholePage', function(event, ui){
+
+  console.log("f")
+    // jQuery.mobile.changePage( '/em', true, true, true, true );
+});
+
+jQuery('body').on('swipeleft', '.wholePage', function(event, ui){
+    jQuery.mobile.changePage( '/ost', true, true, true, true );
+});
+//end
 
 $("#leftArrow, #rightArrow").fadeOut(1000);
 var i = null;

@@ -60,6 +60,7 @@
     <!-- Include js plugin -->
     <script src="/js/owl.carousel.js"></script>
     <script src="/js/cookies.js"></script>
+    <script src = "/js/dragend.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -76,10 +77,13 @@
 
 
 
-<a href=""><span id="leftArrow"></span></a>
+<a href="/markii"><span id="leftArrow"></span></a>
 <a href=""><span id ="rightArrow"></span></a>
 
+<!-- <span id = "leftArrow"></span>
+  <span id = "rightArrow"></span> -->
 
+<div class="wholePage">
 
 <div class="grid-three-fourths float-center">
 <div class="dnaPost">
@@ -138,11 +142,13 @@
 </div>
 </div>
 
+</div>
+
 
 <a href="../index.html"><img id="home" src="/../img/home.png"></a>
 <script>
 function leftArrowPressed() {
-  window.location.href = '/markii'
+  window.location.href = '/markii';
 }
 
 function rightArrowPressed() {
@@ -160,6 +166,19 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+//mobile swipe
+
+jQuery('body').on('swiperight', '.wholePage', function(event, ui){
+
+  console.log("f")
+    // jQuery.mobile.changePage( '/markii', true, true, true, true );
+});
+
+jQuery('body').on('swipeleft', '.wholePage', function(event, ui){
+    jQuery.mobile.changePage( '', true, true, true, true );
+});
+//end
 
 $("#leftArrow, #rightArrow").fadeOut(1000);
 var i = null;

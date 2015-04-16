@@ -60,6 +60,7 @@
     <!-- Include js plugin -->
     <script src="/js/owl.carousel.js"></script>
     <script src="/js/cookies.js"></script>
+    <script src = "/js/dragend.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -76,10 +77,13 @@
 
 
 
-<a href="/Marki"><span id="leftArrow"></span></a>
+<a href="/karlini"><span id="leftArrow"></span></a>
 <a href="/Marki"><span id ="rightArrow"></span></a>
 
+<!-- <span id = "leftArrow"></span>
+  <span id = "rightArrow"></span> -->
 
+<div class="wholePage">
 
 <div class="grid-half float-center">
 <div class="posts">
@@ -162,11 +166,13 @@ console.log(song.duration);
 </div>
 
 
+</div>
+
 
 <a href="../index.html"><img id="home" src="/../img/home.png"></a>
 <script>
 function leftArrowPressed() {
-  window.location.href = '/karlini'
+  window.location.href = '/karlini';
 }
 
 function rightArrowPressed() {
@@ -184,6 +190,19 @@ document.onkeydown = function(evt) {
             break;
     }
 };
+
+//mobile swipe
+
+jQuery('body').on('swiperight', '.wholePage', function(event, ui){
+
+  console.log("f")
+    // jQuery.mobile.changePage( '/karlini', true, true, true, true );
+});
+
+jQuery('body').on('swipeleft', '.wholePage', function(event, ui){
+    jQuery.mobile.changePage( '/Marki', true, true, true, true );
+});
+//end
 
 $("#leftArrow, #rightArrow").fadeOut(1000);
 var i = null;
