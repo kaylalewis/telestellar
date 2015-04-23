@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>  Telestellar </title>
+    <title>  Telespread |  Telestellar </title>
 <html lang="en">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -75,118 +75,101 @@
 <body>
 
 
-	<div class="grid-full float-center">
-<div id="box">
+
+<div class="screen">
+<a href="/written/2015/01/02/lizai.html"><span id="leftArrow"></span></a>
+<a href="/written/2015/01/17/karlini.html"><span id ="rightArrow"></span></a>
 </div>
+
+<!-- <span id = "leftArrow"></span>
+  <span id = "rightArrow"></span> -->
+
+
 <div class="container">
+<div class="grid-full float-center">
+<div class="postswhite">
 
+<p><img src="/../img/book6.jpg" class="telespread" />
+<br />
+Spread from Telestellar kit booklet</p>
 
-
-
-
-				 <a href="/written/2015/01/02/lizai.html"><span class="written">Liza I</span></a>
-
-
-
-				<a href="/visual/2015/01/07/telespread.html"><img src="/img/telebook.png" class="main"></a>
-
-
-
-				 <a href="/written/2015/01/17/karlini.html"><span class="written">Karlin I</span></a>
-
-
-
-				<a href="/visual/2015/01/22/mertaaudio.html"><img src="/img/soni.jpg" class="main"></a>
-
-
-
-				 <a href="/written/2015/01/26/Marki.html"><span class="written">Mark I</span></a>
-
-
-
-				<a href="/visual/2015/02/01/browndwarves.html"><img src="/img/bda/bdaCover.jpg" class="main"></a>
-
-
-
-				 <a href="/written/2015/02/06/leni.html"><span class="written">Len I</span></a>
-
-
-
-				 <a href="/written/2015/02/11/duggertytranscript.html"><span class="written">Duggerty Trial 13/50</span></a>
-
-
-
-				<a href="/visual/2015/02/16/em.html"><img src="/img/gauge/titleEm.jpg" class="main"></a>
-
-
-
-				 <a href="/written/2015/02/21/ameliai.html"><span class="written">Amelia I</span></a>
-
-
-
-				<a href="/visual/2015/02/25/ost.html"><img src="/img/ostCover.jpg" class="main"></a>
-
-
-
-				 <a href="/written/2015/03/01/bridge.html"><span class="written">Bridge</span></a>
-
-
-
-				 <a href="/written/2015/03/06/Yeldai.html"><span class="written">Yelda I</span></a>
-
-
-
-				 <a href="/written/2015/03/07/lenII.html"><span class="written">Len II</span></a>
-
-
-
-				<a href="/visual/2015/03/10/superbluegiants.html"><img src="/img/sbg/titlesbg.jpg" class="main"></a>
-
-
-
-				 <a href="/written/2015/03/12/karlinII.html"><span class="written">Karlin II</span></a>
-
-
-
-				<a href="/visual/2015/03/17/stellamental.html"><img src="/img/square.jpg" class="main"></a>
-
-
-
-				 <a href="/written/2015/03/21/markii.html"><span class="written">Mark II</span></a>
-
-
-
-				<a href="/visual/2015/03/29/dna.html"><img src="/img/square.jpg" class="main"></a>
-
-
+</div>
 </div>
 </div>
 
 
+
+<div id = "home">
+<a href="/../index.html"><img src="/../img/home.png"></a>
+</div>
+
+<div class="phone">
+<a href="/written/2015/01/02/lizai.html"><span id="leftArrowMobile"></span></a>
+<a href="/../index.html"><img src="/../img/home.png" id="mobileHome"></a>
+<a href="/written/2015/01/17/karlini.html"><span id ="rightArrowMobile"></span></a>
+</div>
 
 <script>
+function leftArrowPressed() {
+  window.location.href = '/written/2015/01/02/lizai.html';
 
-// window.onload = function(){
+  if ('/written/2015/01/02/lizai.html' == '/postturn/2015/01/02/blank.html')
+  {
 
-// 	if ( Cookies.get('key') != null) {
-// 		$("#box").delay(2000).fadeOut(2000, function() {
-// 			Cookies.set('key', 'value', { expires: 60 }); // Expires in 1 minutes
-// 		});
-// 	} else {
-// 		$("#box").hide();
-// 	}
-// }
-
-window.onload = function(){
+    window.location.href = '/visual/2015/03/29/dna.html';
+  }
+}
 
 
+function rightArrowPressed() {
+  window.location.href = '/written/2015/01/17/karlini.html';
 
-		$("#box").delay(1000).fadeOut(1000);
-	}
-	
+  if ('/written/2015/01/17/karlini.html' == '') {
+
+    window.location.href = '/written/2015/01/02/lizai.html';
+  }
+}
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    switch (evt.keyCode) {
+        case 37:
+            leftArrowPressed();
+            break;
+        case 39:
+            rightArrowPressed();
+            break;
+    }
+};
+
+//mobile swipe
+
+jQuery('body').on('swiperight', '.wholePage', function(event, ui){
+
+  console.log("f")
+    // jQuery.mobile.changePage( '/written/2015/01/02/lizai.html', true, true, true, true );
+});
+
+jQuery('body').on('swipeleft', '.wholePage', function(event, ui){
+    jQuery.mobile.changePage( '/written/2015/01/17/karlini.html', true, true, true, true );
+});
+//end
+
+$("#leftArrow, #rightArrow").fadeOut(1000);
+var i = null;
+$("body").mousemove(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").fadeIn(1000);
+  i = setTimeout('$("#leftArrow, #rightArrow").fadeOut(1000)' , 2000);
+
+}).mouseleave(function() {
+
+  clearTimeout(i);
+  $("#leftArrow, #rightArrow").fadeOut(1000);
+});
 
 </script>
-
 
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
@@ -207,5 +190,4 @@ window.onload = function(){
 </body>
 
 </html>
-
 

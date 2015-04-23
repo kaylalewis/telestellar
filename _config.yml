@@ -4,8 +4,7 @@ markdown: kramdown
 highlighter: pygments
 
 paginate: 100
-
-permalink: /:title
+paginate_path: "/:title/:num"
 
 --- # Categories
 - visual

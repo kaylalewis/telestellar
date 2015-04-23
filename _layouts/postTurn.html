@@ -1,28 +1,47 @@
 {% include header.html %}
 
 
-
+<div class="screen">
 <a href="{{ page.previous.url }}"><span id="leftArrow"></span></a>
 <a href="{{ page.next.url }}"><span id ="rightArrow"></span></a>
+</div>
 
 <!-- <span id = "leftArrow"></span>
   <span id = "rightArrow"></span> -->
 
-<div class="wholePage">
 
 {{ content }}
 
+
+<div id = "home">
+<a href="/../index.html"><img src="/../img/home.png"></a>
 </div>
 
+<div class="phone">
+<a href="{{ page.previous.url }}"><span id="leftArrowMobile"></span></a>
+<a href="/../index.html"><img src="/../img/home.png" id="mobileHome"></a>
+<a href="{{ page.next.url }}"><span id ="rightArrowMobile"></span></a>
+</div>
 
-<a href="../index.html"><img id="home" src="/../img/home.png"></a>
 <script>
 function leftArrowPressed() {
   window.location.href = '{{ page.previous.url }}';
+
+  if ('{{ page.previous.url }}' == '{% post_url 2015-01-02-blank %}')
+  {
+
+    window.location.href = '{% post_url 2015-03-29-dna %}';
+  }
 }
+
 
 function rightArrowPressed() {
   window.location.href = '{{ page.next.url }}';
+
+  if ('{{ page.next.url }}' == '{{site.url/dna.html}}') {
+
+    window.location.href = '{% post_url 2015-01-02-lizai %}';
+  }
 }
 
 document.onkeydown = function(evt) {
