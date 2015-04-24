@@ -3,7 +3,7 @@ layout: images
 image: /img/sbg/titlesbg.jpg
 category: visual
 ---
-<div class="animated fadeOut">Annual festival of Radius 3B's super blue giants</div>
+<div class="animated fadeOut">Annual festival of blue supergiant stars, Radius 3B</div>
 
 <div id="owl-demo" class="owl-carousel">
   <div><img src="/img/sbg/1.jpg"></div>
