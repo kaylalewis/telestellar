@@ -459,10 +459,14 @@ margin-top:100px;
 		border-top: 25px solid transparent;
 		border-bottom: 25px solid transparent;
 		border-left: 25px solid gray;
-		margin-left: 80%;
-
+		display:inline-block;
 		z-index: 15;
 		float: right;
+		margin-top: -146px;
+		margin-right:25%;
+		margin-left:25%;
+
+
 	}
 
 	#leftArrowMobile {
@@ -473,20 +477,24 @@ margin-top:100px;
 		border-bottom: 25px solid transparent;
 		border-right:25px solid gray;
 		float: left;
-		margin-left: 20%;
-
+		display:inline-block;
 		z-index: 15;
+		margin-top: -146px;
+		margin-left:25%;
+		margin-right:25%;
 
 
 	}
 
 	#mobileHome {
+	
+	display:inline-block;
 
 
-			margin-left:30%;
-			margin-right:30%;
+		margin-left:23%;
+		margin-right:23%;
 
-		float: center;
+
 	}
 
 	.screen {
@@ -496,7 +504,7 @@ margin-top:100px;
 
 .phone {
 
-	display: inline-block;
+	display: block;
 
 }
 	#home {
