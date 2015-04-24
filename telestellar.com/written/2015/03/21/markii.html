@@ -78,7 +78,7 @@
 
 <div class="screen">
 <a href="/visual/2015/03/17/stellamental.html"><span id="leftArrow"></span></a>
-<a href="/visual/2015/03/29/dna.html"><span id ="rightArrow"></span></a>
+<a href=""><span id ="rightArrow"></span></a>
 </div>
 
 <!-- <span id = "leftArrow"></span>
@@ -115,15 +115,28 @@
 
 
 
-<div id = "home">
-<a href="/../index.html"><img src="/../img/home.png"></a>
+<div id="mainScreen">
+<a href="/../index.html"><img src="/../img/home.png" id="home"></a>
 </div>
 
-<div class="phone">
-  <a href="/../index.html"><img src="/../img/home.png" id="mobileHome"></a>
-<a href="/visual/2015/03/17/stellamental.html" id="leftArrowMobile"></a>
 
-<a href="/visual/2015/03/29/dna.html" id="rightArrowMobile"></a>
+
+<div class="phone">
+
+
+  <div><a href="/../index.html"><img src="/../img/home.png" id="mobileHome"></a></div>
+
+
+  <div><a href="/visual/2015/03/17/stellamental.html" id="leftArrowMobile"></a></div>
+
+
+
+  <div><a href="" id="rightArrowMobile"></a></div>
+
+
+
+
+
 </div>
 
 <script>
@@ -133,15 +146,15 @@ function leftArrowPressed() {
   if ('/visual/2015/03/17/stellamental.html' == '/postturn/2015/01/02/blank.html')
   {
 
-    window.location.href = '/visual/2015/03/29/dna.html';
+    window.location.href = '/written/2015/03/21/markii.html';
   }
 }
 
 
 function rightArrowPressed() {
-  window.location.href = '/visual/2015/03/29/dna.html';
+  window.location.href = '';
 
-  if ('/visual/2015/03/29/dna.html' == '') {
+  if ('' == '') {
 
     window.location.href = '/written/2015/01/02/lizai.html';
   }
@@ -168,7 +181,7 @@ jQuery('body').on('swiperight', '.wholePage', function(event, ui){
 });
 
 jQuery('body').on('swipeleft', '.wholePage', function(event, ui){
-    jQuery.mobile.changePage( '/visual/2015/03/29/dna.html', true, true, true, true );
+    jQuery.mobile.changePage( '', true, true, true, true );
 });
 //end
 

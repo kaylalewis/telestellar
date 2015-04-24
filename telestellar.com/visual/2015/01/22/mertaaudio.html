@@ -90,54 +90,55 @@
 
 <!-- <script type="text/javascript" src="/../js/js.js"></script>
 <script type="text/javascript" src="/../js/html5slider.js"></script> -->
-<!-- <audio controls>
-<source src="/../media/7671081.mp3" type="audio/mpeg">
-</audio> -->
 
 <p>Merta vocal synchronization with Kepler 7671081</p>
 
-<div id="player">
+<audio controls="">
+<source src="/../media/7671081.mp3" type="audio/mpeg" />
+</audio>
 
-<div id="time"></div>
-<br />
+<!-- <div id = "player">
 
-<div id="play">
-</div>
+<div id = "time"></div>
+<br>
+
+<div id = "play">
+</div> -->
 <!-- <div id = "pause">
 </div> -->
 
-</div>
+<!-- </div> -->
 
 <script>
-document.ready = function() {
+// document.ready = function() {
 
-var song = new Audio("/../media/7671081.mp3");
+// var song = new Audio("/../media/7671081.mp3");
 
-var time = song.currentTime;
-
-
+// var time = song.currentTime;
 
 
 
 
 
-$("#play").click(function() {
-
-song.play();
 
 
+// $("#play").click(function() {
 
-$("#time").animate({
-
-	marginLeft: "250px"
-
-}, 25330);
-
-console.log(song.duration);
+// song.play();
 
 
 
-});
+// $("#time").animate({
+
+// 	marginLeft: "250px"
+
+// }, 25330);
+
+// console.log(song.duration);
+
+
+
+// });
 
 
 
@@ -167,15 +168,28 @@ console.log(song.duration);
 
 
 
-<div id = "home">
-<a href="/../index.html"><img src="/../img/home.png"></a>
+<div id="mainScreen">
+<a href="/../index.html"><img src="/../img/home.png" id="home"></a>
 </div>
 
-<div class="phone">
-  <a href="/../index.html"><img src="/../img/home.png" id="mobileHome"></a>
-<a href="/written/2015/01/17/karlini.html" id="leftArrowMobile"></a>
 
-<a href="/written/2015/01/26/Marki.html" id="rightArrowMobile"></a>
+
+<div class="phone">
+
+
+  <div><a href="/../index.html"><img src="/../img/home.png" id="mobileHome"></a></div>
+
+
+  <div><a href="/written/2015/01/17/karlini.html" id="leftArrowMobile"></a></div>
+
+
+
+  <div><a href="/written/2015/01/26/Marki.html" id="rightArrowMobile"></a></div>
+
+
+
+
+
 </div>
 
 <script>
@@ -185,7 +199,7 @@ function leftArrowPressed() {
   if ('/written/2015/01/17/karlini.html' == '/postturn/2015/01/02/blank.html')
   {
 
-    window.location.href = '/visual/2015/03/29/dna.html';
+    window.location.href = '/written/2015/03/21/markii.html';
   }
 }
 

@@ -13,15 +13,28 @@
 {{ content }}
 
 
-<div id = "home">
-<a href="/../index.html"><img src="/../img/home.png"></a>
+<div id="mainScreen">
+<a href="/../index.html"><img src="/../img/home.png" id="home"></a>
 </div>
 
-<div class="phone">
-  <a href="/../index.html"><img src="/../img/home.png" id="mobileHome"></a>
-<a href="{{ page.previous.url }}" id="leftArrowMobile"></a>
 
-<a href="{{ page.next.url }}" id="rightArrowMobile"></a>
+
+<div class="phone">
+
+
+  <div><a href="/../index.html"><img src="/../img/home.png" id="mobileHome"></a></div>
+
+
+  <div><a href="{{ page.previous.url }}" id="leftArrowMobile"></a></div>
+
+
+
+  <div><a href="{{ page.next.url }}" id="rightArrowMobile"></a></div>
+
+
+
+
+
 </div>
 
 <script>
@@ -31,7 +44,7 @@ function leftArrowPressed() {
   if ('{{ page.previous.url }}' == '{% post_url 2015-01-02-blank %}')
   {
 
-    window.location.href = '{% post_url 2015-03-29-dna %}';
+    window.location.href = '{% post_url 2015-03-21-markii %}';
   }
 }
 
@@ -39,7 +52,7 @@ function leftArrowPressed() {
 function rightArrowPressed() {
   window.location.href = '{{ page.next.url }}';
 
-  if ('{{ page.next.url }}' == '{{site.url/dna.html}}') {
+  if ('{{ page.next.url }}' == '{{site.url/markii.html}}') {
 
     window.location.href = '{% post_url 2015-01-02-lizai %}';
   }
