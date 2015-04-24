@@ -463,8 +463,8 @@ margin-top:100px;
 		z-index: 15;
 		float: right;
 		margin-top:-135px;
-		margin-right:0;
-		margin-left:0;
+		margin-right:2%;
+		margin-left:2%;
 
 
 	}
@@ -480,8 +480,8 @@ margin-top:100px;
 		display:inline-block;
 		z-index: 15;
 		margin-top:-135px;
-		margin-left:0;
-		margin-right:0;
+		margin-left:2%;
+		margin-right:2%;
 
 
 	}
