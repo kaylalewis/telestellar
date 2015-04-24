@@ -3,7 +3,7 @@ layout: images
 image: /img/bda/bdaCover.jpg
 category: visual
 ---
-<div class="animated fadeOut">Anonymous meeting of rapidly dying stars, Chicago, IL</div>
+<div class="animated fadeOut">Anonymous meeting of rapidly-dying stars, Chicago, IL</div>
 
 <div id="owl-demo" class="owl-carousel">
   <div><img src="/img/bda/bda1.jpg"></div>
