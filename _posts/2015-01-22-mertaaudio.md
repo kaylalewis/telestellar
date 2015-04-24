@@ -5,13 +5,16 @@ category: visual
 ---
 <!-- <script type="text/javascript" src="/../js/js.js"></script>
 <script type="text/javascript" src="/../js/html5slider.js"></script> -->
+<div class="merta">
 
-
+<div class="mertaWord">
 Merta vocal synchronization with Kepler 7671081
-
+</div>
 <audio controls>
 <source src="/../media/7671081.mp3" type="audio/mpeg">
 </audio>
+
+</div>
 
 <!-- <div id = "player">
 

@@ -204,6 +204,19 @@ li {
       border-radius: 3px;
     }
 
+ .merta {
+
+ 	margin-top:200px;
+ 	margin-bottom:400px;
+ }
+
+ .mertaWord {
+
+ 	margin-bottom:100px;
+ }
+
+
+
 #leftArrow, #rightArrow, #home {
 
 	opacity: .9;
